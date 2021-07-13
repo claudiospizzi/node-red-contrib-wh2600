@@ -24,7 +24,7 @@
     "fix:eslint": "eslint --ext .js,.ts . --fix",
     "preversion": "npm-run-all lint",
     "version": "npm-run-all version:changelog version:stage",
-    "version:changelog": "replace-in-file \"Unreleased\" \" %npm_package_version%\" CHANGELOG.md",
+    "version:changelog": "replace-in-file \"Unreleased\" \"%npm_package_version%\" CHANGELOG.md",
     "version:stage": "git add -A",
     "postversion": "npm-run-all postversion:push postversion:pushtag",
     "postversion:push": "git push",
