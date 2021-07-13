@@ -7,8 +7,14 @@ RED.nodes.registerType<WH2600StatusEditorNodeProperties>("wh2600-status", {
   category: "wh2600",
   color: "#f5f5dc",
   defaults: {
-    name: { value: "" },
-    wh2600: { value: "", type: "wh2600-config" },
+    name: {
+      value: ""
+    },
+    wh2600: {
+      value: "",
+      type: "wh2600-config",
+      required: true
+    },
   },
   inputs: 1,
   outputs: 1,
