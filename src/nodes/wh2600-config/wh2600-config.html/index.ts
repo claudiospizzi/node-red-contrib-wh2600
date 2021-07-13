@@ -8,11 +8,11 @@ RED.nodes.registerType<WH2600ConfigEditorNodeProperties>("wh2600-config", {
   defaults: {
     name: {
       value: "",
-      required: true
+      required: true,
     },
     address: {
       value: "",
-      required: true
+      required: true,
     },
   },
   label: function () {
