@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+- Fixed: Update help for the status node
 - Fixed: Move the library into the root of the src folder
 - Fixed: Don't include and .debug files into the package
 
