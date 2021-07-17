@@ -6,7 +6,9 @@ declare const RED: EditorRED;
 RED.nodes.registerType<<%NodeTypePascalCase%>EditorNodeProperties>("<%NodeTypeKebabCase%>", {
   category: "config",
   defaults: {
-    name: { value: "" },
+    name: {
+      value: ""
+    },
   },
   label: function () {
     return this.name || "<%NodeLabel%>";
