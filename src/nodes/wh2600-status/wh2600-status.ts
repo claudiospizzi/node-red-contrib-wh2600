@@ -17,6 +17,8 @@ const nodeInit: NodeInitializer = (RED): void => {
           this.status({ fill: "green", shape: "dot", text: "successful" });
 
           msg.payload = {
+            name: this.wh2600.name,
+            address: this.wh2600.address,
             indoorTemperature: response.indoorTemperature,
             indoorHumidity: response.indoorHumidity,
             outdoorTemperature: response.outdoorTemperature,
