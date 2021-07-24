@@ -1,5 +1,5 @@
-import axios from "axios";
-import { parse as parseHtml, HTMLElement } from "node-html-parser";
+import axios from 'axios';
+import { parse as parseHtml, HTMLElement } from 'node-html-parser';
 
 /**
  * Class representing the current weather data for the weather station.
@@ -45,23 +45,23 @@ export class WeatherStation {
     const document = parseHtml(result.data);
 
     const weatherData = new WeatherData();
-    weatherData.indoorTemperature = WeatherStation.getWeatherDataNumber(document, "inTemp");
-    weatherData.indoorHumidity = WeatherStation.getWeatherDataNumber(document, "inHumi");
-    weatherData.outdoorTemperature = WeatherStation.getWeatherDataNumber(document, "outTemp");
-    weatherData.outdoorHumidity = WeatherStation.getWeatherDataNumber(document, "outHumi");
-    weatherData.absolutePressure = WeatherStation.getWeatherDataNumber(document, "AbsPress");
-    weatherData.relativePressure = WeatherStation.getWeatherDataNumber(document, "RelPress");
-    weatherData.windDirection = WeatherStation.getWeatherDataNumber(document, "windir");
-    weatherData.windSpeed = WeatherStation.getWeatherDataNumber(document, "windspeed");
-    weatherData.windGust = WeatherStation.getWeatherDataNumber(document, "gustspeed");
-    weatherData.solarRadiation = WeatherStation.getWeatherDataNumber(document, "solarrad");
-    weatherData.uv = WeatherStation.getWeatherDataNumber(document, "uv");
-    weatherData.uvi = WeatherStation.getWeatherDataNumber(document, "uvi");
-    weatherData.hourlyRain = WeatherStation.getWeatherDataNumber(document, "rainofhourly");
-    weatherData.dailyRain = WeatherStation.getWeatherDataNumber(document, "rainofdaily");
-    weatherData.weeklyRain = WeatherStation.getWeatherDataNumber(document, "rainofweekly");
-    weatherData.monthlyRain = WeatherStation.getWeatherDataNumber(document, "rainofmonthly");
-    weatherData.yearlyRain = WeatherStation.getWeatherDataNumber(document, "rainofyearly");
+    weatherData.indoorTemperature = WeatherStation.getWeatherDataNumber(document, 'inTemp');
+    weatherData.indoorHumidity = WeatherStation.getWeatherDataNumber(document, 'inHumi');
+    weatherData.outdoorTemperature = WeatherStation.getWeatherDataNumber(document, 'outTemp');
+    weatherData.outdoorHumidity = WeatherStation.getWeatherDataNumber(document, 'outHumi');
+    weatherData.absolutePressure = WeatherStation.getWeatherDataNumber(document, 'AbsPress');
+    weatherData.relativePressure = WeatherStation.getWeatherDataNumber(document, 'RelPress');
+    weatherData.windDirection = WeatherStation.getWeatherDataNumber(document, 'windir');
+    weatherData.windSpeed = WeatherStation.getWeatherDataNumber(document, 'windspeed');
+    weatherData.windGust = WeatherStation.getWeatherDataNumber(document, 'gustspeed');
+    weatherData.solarRadiation = WeatherStation.getWeatherDataNumber(document, 'solarrad');
+    weatherData.uv = WeatherStation.getWeatherDataNumber(document, 'uv');
+    weatherData.uvi = WeatherStation.getWeatherDataNumber(document, 'uvi');
+    weatherData.hourlyRain = WeatherStation.getWeatherDataNumber(document, 'rainofhourly');
+    weatherData.dailyRain = WeatherStation.getWeatherDataNumber(document, 'rainofdaily');
+    weatherData.weeklyRain = WeatherStation.getWeatherDataNumber(document, 'rainofweekly');
+    weatherData.monthlyRain = WeatherStation.getWeatherDataNumber(document, 'rainofmonthly');
+    weatherData.yearlyRain = WeatherStation.getWeatherDataNumber(document, 'rainofyearly');
 
     return weatherData;
   }
@@ -74,7 +74,7 @@ export class WeatherStation {
    */
   private static getWeatherDataNumber(document: HTMLElement, name: string): number | undefined {
     const element = document.querySelector(`input[name="${name}"]`);
-    const attribute = element?.getAttribute("value");
+    const attribute = element?.getAttribute('value');
     const value = parseFloat(attribute as string);
     if (isNaN(value)) {
       return undefined;

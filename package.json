@@ -7,7 +7,11 @@
     "node-red-contrib",
     "wh2600",
     "weather",
-    "station"
+    "station",
+    "foshk",
+    "froggit",
+    "renkforce",
+    "ambient"
   ],
   "scripts": {
     "add-node": "node ./.utils/template/add-node.js",
@@ -44,6 +48,10 @@
       "wh2600-status": "./dist/nodes/wh2600-status/wh2600-status.js"
     }
   },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-html-parser": "^4.0.0"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "@types/node-red": "^1.1.1",
@@ -61,9 +69,5 @@
     "replace-in-file": "^6.2.0",
     "rollup": "^2.53.2",
     "typescript": "^4.3.5"
-  },
-  "dependencies": {
-    "axios": "^0.21.1",
-    "node-html-parser": "^4.0.0"
   }
 }
