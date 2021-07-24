@@ -1,5 +1,5 @@
 import { NodeInitializer } from 'node-red';
-import { WeatherStation } from '../../modules/wh2600';
+import { WeatherStation } from 'wh2600';
 import { WH2600ConfigNode } from '../wh2600-config/modules/types';
 import { WH2600StatusNode, WH2600StatusNodeDef } from './modules/types';
 

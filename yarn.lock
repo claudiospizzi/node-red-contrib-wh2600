@@ -2773,7 +2773,7 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-html-parser@^4.0.0:
+node-html-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-4.1.0.tgz#9c23130609e203030113255c519ff2d3fbbfc439"
   integrity sha512-sqSaqyrg1mqsRTl0r0h4UVAHBoW605rSpanOz0Yr7NzERl0fJ1eh6CRoZFcIXEIyzD3QJfGqsIMP+kzkViTiAA==
@@ -4140,6 +4140,14 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+wh2600@^2.0.0:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/wh2600/-/wh2600-2.0.1.tgz#23d0954acc5246ee4d607d59ca360ac42b057f6c"
+  integrity sha512-P+otPXrHRt8VEGrwlWyk9oWOOFQSs6osv5fgGDKgdnyt4o7gjXxw3dzjOMvqHizNjvCkHg1Ot7gzkzmSjGzycQ==
+  dependencies:
+    axios "^0.21.1"
+    node-html-parser "^4.1.0"
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
