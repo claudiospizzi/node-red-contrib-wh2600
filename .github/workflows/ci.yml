@@ -1,0 +1,33 @@
+name: "CI"
+
+on:
+  push:
+  schedule:
+    - cron: '0 6 * * 6'
+
+jobs:
+  build-lint:
+    name: "Build & Lint"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ github.repository }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ github.repository }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Build
+        run: npm run build
+
+      - name: Run Lint
+        run: npm run lint
