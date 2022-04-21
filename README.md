@@ -1,6 +1,6 @@
 [![node-red-contrib](https://img.shields.io/badge/node--red-node--red--contrib--wh2600-aa4444.svg?style=flat-square)](https://flows.nodered.org/node/node-red-contrib-wh2600)
 [![npm](https://img.shields.io/npm/v/node-red-contrib-wh2600.svg?style=flat-square)](https://www.npmjs.com/package/node-red-contrib-wh2600)
-[![build](https://img.shields.io/github/workflow/status/claudiospizzi/node-red-contrib-wh2600/ci?style=flat-square)](https://github.com/claudiospizzi/node-red-contrib-wh2600/actions/workflows/ci.yml)
+[![build](https://img.shields.io/github/workflow/status/claudiospizzi/node-red-contrib-wh2600/CI?style=flat-square)](https://github.com/claudiospizzi/node-red-contrib-wh2600/actions/workflows/ci.yml)
 
 # node-red-contrib-wh2600
 
