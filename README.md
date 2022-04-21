@@ -24,6 +24,6 @@ Node to get the current weather data.
 
 This module is not associated with any of the weather station manufacturers.
 
-This software is provided "as is", without any guarantees on the function and operation of the Intex devices. You use it at your own risk. For more details, check the license terms.
+This software is provided "as is", without any guarantees on the function and operation of the weather station devices. You use it at your own risk. For more details, check the license terms.
 
 Icon [Weather Station Wind](https://icons8.com/icon/uc6YAyLT17Hx/weather-station-wind) by [Icons8](https://icons8.com).
