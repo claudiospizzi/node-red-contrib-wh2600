@@ -10,7 +10,7 @@ RED.nodes.registerType<WH2600StatusEditorNodeProperties>('wh2600-status', {
     name: {
       value: '',
     },
-    wh2600: {
+    device: {
       value: '',
       type: 'wh2600-config',
       required: true,
