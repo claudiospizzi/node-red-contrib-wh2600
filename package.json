@@ -15,11 +15,12 @@
   ],
   "scripts": {
     "add-node": "node ./.utils/template/add-node.js",
-    "build": "npm-run-all build:purge build:copy build:bundle build:compile",
+    "build": "npm-run-all build:purge build:copy build:bundle build:compile build:example",
     "build:purge": "del-cli --force dist",
     "build:copy": "copyfiles -u 2 \"./src/nodes/**/*.{png,svg}\" \"./dist/nodes/\"",
     "build:bundle": "rollup -c ./.utils/bundle/rollup.config.editor.js",
     "build:compile": "tsc",
+    "build:example": "copyfiles -u 2 \"./src/examples/*.json\" \"./dist/examples/\"",
     "lint": "npm-run-all lint:prettier lint:eslint",
     "lint:prettier": "prettier --ignore-path .eslintignore --check \"**/*.{js,ts,md}\"",
     "lint:eslint": "eslint --ext .js,.ts .",
@@ -33,8 +34,7 @@
     "postversion": "npm-run-all postversion:push postversion:pushtag",
     "postversion:push": "git push",
     "postversion:pushtag": "git push --tags",
-    "prepare": "npm-run-all build",
-    "prepublishOnly": "npm-run-all lint"
+    "prepublishOnly": "npm-run-all build lint"
   },
   "author": "Claudio Spizzi",
   "license": "MIT",
@@ -46,7 +46,11 @@
     "url": "https://github.com/claudiospizzi/node-red-contrib-wh2600/issues"
   },
   "homepage": "https://github.com/claudiospizzi/node-red-contrib-wh2600#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "wh2600-config": "./dist/nodes/wh2600-config/wh2600-config.js",
       "wh2600-status": "./dist/nodes/wh2600-status/wh2600-status.js"
