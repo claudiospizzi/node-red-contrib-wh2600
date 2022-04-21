@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 1.2.0
 
+- Changed: Refactor the code base
+
 ## 1.1.2
 
 - Changed: Build and publish script
