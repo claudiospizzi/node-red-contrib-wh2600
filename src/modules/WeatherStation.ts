@@ -31,6 +31,7 @@ export class WeatherStation {
     weatherData.relativePressure = WeatherStation.getWeatherDataNumber(document, 'RelPress');
     weatherData.windDirection = WeatherStation.getWeatherDataNumber(document, 'windir');
     weatherData.windSpeed = WeatherStation.getWeatherDataNumber(document, 'windspeed');
+    weatherData.windAverage = WeatherStation.getWeatherDataNumber(document, 'avgwind');
     weatherData.windGust = WeatherStation.getWeatherDataNumber(document, 'gustspeed');
     weatherData.solarRadiation = WeatherStation.getWeatherDataNumber(document, 'solarrad');
     weatherData.uv = WeatherStation.getWeatherDataNumber(document, 'uv');

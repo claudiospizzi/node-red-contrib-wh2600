@@ -10,6 +10,7 @@ export class WeatherData {
   public relativePressure: number | undefined;
   public windDirection: number | undefined;
   public windSpeed: number | undefined;
+  public windAverage: number | undefined;
   public windGust: number | undefined;
   public solarRadiation: number | undefined;
   public uv: number | undefined;

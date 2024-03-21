@@ -25,6 +25,7 @@ const nodeInit: NodeInitializer = (RED): void => {
           relativePressure: weatherData.relativePressure,
           windDirection: weatherData.windDirection,
           windSpeed: weatherData.windSpeed,
+          windAverage: weatherData.windAverage,
           windGust: weatherData.windGust,
           solarRadiation: weatherData.solarRadiation,
           uv: weatherData.uv,
